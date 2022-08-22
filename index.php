@@ -11,7 +11,8 @@
         <?php
         $paragraph = 'ciao sono proprio un bravo programmatore che non dice mai 404 e poi 404 e ancora di più 404';
         
-        echo $paragraph;
+        echo ''. $paragraph. 'e sono lungo'. strlen($paragraph);;
+        
         
         //?censura=404
         $subs = $_GET['censura']; 
@@ -20,9 +21,10 @@
 
     <h1>
         Censurato:
+        <br>
         <?php
         $paragraph2 = str_replace($subs,'***',$paragraph);
-        echo $paragraph2;
+        echo ''. $paragraph2. 'e sono lungo'. strlen($paragraph2);
         ?>
     </h1>
 </body>
